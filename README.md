@@ -1,5 +1,7 @@
 # docker-aws-mfa
 
+![](https://github.com/craighurley/docker-aws-mfa/workflows/Build%20and%20Publish%20to%20Docker%20Hub/badge.svg)
+
 Run `aws-mfa` in a container.
 
 ## Running
