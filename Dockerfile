@@ -1,8 +1,4 @@
-# Run aws-mfa in a container
-# docker run --rm -it -v $HOME/.aws:/root/.aws craighurley/docker-aws-mfa
-
-FROM        python:3.6-alpine3.9
-MAINTAINER  Craig Hurley
+FROM        python:3.7-alpine3.11
 
 WORKDIR     /workdir
 

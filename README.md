@@ -1,27 +1,23 @@
 # docker-aws-mfa
 
-Run aws-mfa in a container.
+Run `aws-mfa` in a container.
 
 ## Running
 
-Run aws-mfa in a container:
+Run `aws-mfa` in a container:
 
 ```sh
-# AWS_PROFILE is set to default within the container
-docker run --rm -it -v $HOME/.aws:/root/.aws craighurley/docker-aws-mfa
-
-# AWS_PROFILE is set to match the hosts value
-docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/docker-aws-mfa
+# Set the AWS_PROFILE environment variable and pass it to the container
+AWS_PROFILE=example
+docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-mfa
 ```
 
 Optional: create an alias for the container:
 
 ```sh
-alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/docker-aws-mfa'
+alias aws='docker run --rm -it -v $HOME/.aws:/root/.aws -e AWS_PROFILE craighurley/aws-mfa'
 ```
 
 ## Links
 
 - <https://github.com/broamski/aws-mfa>
-- <https://alpinelinux.org>
-- <https://docs.docker.com>
