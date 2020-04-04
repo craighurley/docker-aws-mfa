@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.12-3
+
+- aws-mfa:0.0.12, python:3.8, alpine:3.11
+
 ## 0.0.12-2
 
 - aws-mfa:0.0.12, python:3.7, alpine:3.11
